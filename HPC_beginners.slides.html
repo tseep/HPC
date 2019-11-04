@@ -13203,7 +13203,7 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="HPC-Tutorial-for-beginners">HPC Tutorial for beginners<a class="anchor-link" href="#HPC-Tutorial-for-beginners">&#182;</a></h1><p>Author: Hanno Kase</p>
-<p>Date: 28.10.2019</p>
+<p>Date: 06.11.2019</p>
 
 </div>
 </div>
@@ -13246,7 +13246,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ssh hkase@hpceui.iue.private
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">ssh</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span>
 </pre></div>
 
     </div>
@@ -13300,10 +13300,10 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
-<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span> 
-<span class="nt">table</span> <span class="nt">td</span><span class="o">,</span> <span class="nt">table</span> <span class="nt">th</span><span class="o">,</span> <span class="nt">table</span> <span class="nt">tr</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">left</span> <span class="cp">!important</span><span class="p">;</span> <span class="k">font-size</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<div class=" highlight hl-powershell"><pre><span></span><span class="p">%</span><span class="k">%</span><span class="n">html</span>
+<span class="p">&lt;</span><span class="n">style</span><span class="p">&gt;</span> 
+<span class="n">table</span> <span class="n">td</span><span class="p">,</span> <span class="n">table</span> <span class="n">th</span><span class="p">,</span> <span class="n">table</span> <span class="n">tr</span> <span class="p">{</span><span class="n">text-align</span><span class="err">:</span><span class="n">left</span> <span class="p">!</span><span class="n">important</span><span class="p">;</span> <span class="n">font-size</span><span class="err">:</span><span class="n">20px</span> <span class="p">!</span><span class="n">important</span><span class="p">;}</span>
+<span class="p">&lt;/</span><span class="n">style</span><span class="p">&gt;</span>
 </pre></div>
 
     </div>
@@ -13387,7 +13387,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
     </tr>
     <tr>
       <td><code>rm -r [FOLDER] </code></td>
-      <td>Recursively delete the filder and all files in it</td>
+      <td>Recursively delete the folder and all files in it</td>
     </tr>  
     <tr>
       <td><code>nano [FILE]</code></td>
@@ -13401,7 +13401,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transfering-files-to-HPC-cluster">Transfering files to HPC cluster<a class="anchor-link" href="#Transfering-files-to-HPC-cluster">&#182;</a></h2><ul>
+<h2 id="How-to-transfer-files-to-the-HPC-cluster">How to transfer files to the HPC cluster<a class="anchor-link" href="#How-to-transfer-files-to-the-HPC-cluster">&#182;</a></h2><ul>
 <li>Command Line<ul>
 <li>SFTP</li>
 <li>SCP</li>
@@ -13423,7 +13423,8 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transfering-files---Command-Line:-SFTP">Transfering files - Command Line: SFTP<a class="anchor-link" href="#Transfering-files---Command-Line:-SFTP">&#182;</a></h2><p>Command for using SFTP: <code>sftp username@hpceui.iue.private</code></p>
+<h2 id="Transfering-files---Command-Line:-SFTP">Transfering files - Command Line: SFTP<a class="anchor-link" href="#Transfering-files---Command-Line:-SFTP">&#182;</a></h2><p>Interactive command, that opens a connection for submiting several commands for transfering files.</p>
+<p>Command for opening SFTP connection: <code>sftp username@hpceui.iue.private</code></p>
 
 </div>
 </div>
@@ -13433,7 +13434,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span>
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span>
 </pre></div>
 
     </div>
@@ -13444,6 +13445,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Move around the local or remote machine, and transfer files using following commands.</p>
 <table align="center">
   <thead>
     <tr>
@@ -13489,7 +13491,8 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
       <td>Get a file from the REMOTE machine to the LOCAL machine</td>
     </tr>
   </tbody>
-</table>
+</table><p>To close the connection by typing <code>exit</code> or pressing <kbd>CTRL</kbd>+<kbd>C</kbd>.</p>
+
 </div>
 </div>
 </div></section><section>
@@ -13505,7 +13508,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span>
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span>
 </pre></div>
 
     </div>
@@ -13526,7 +13529,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">put</span> <span class="n">data</span><span class="o">.</span><span class="n">csv</span> 
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">put</span> <span class="n">data</span><span class="p">.</span><span class="n">csv</span>
 </pre></div>
 
     </div>
@@ -13545,7 +13548,8 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transfering-files---Command-Line:-SCP">Transfering files - Command Line: SCP<a class="anchor-link" href="#Transfering-files---Command-Line:-SCP">&#182;</a></h2><p>Command for using SCP:  <code>SCP [SOURCE] username@hpceui.iue.private:[TARGET]</code></p>
+<h2 id="Transfering-files---Command-Line:-SCP">Transfering files - Command Line: SCP<a class="anchor-link" href="#Transfering-files---Command-Line:-SCP">&#182;</a></h2><p>Non-interactive command. Takes only one command and then exits.</p>
+<p>Command for using SCP:  <code>SCP [SOURCE] username@hpceui.iue.private:[TARGET]</code></p>
 
 </div>
 </div>
@@ -13555,7 +13559,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scp</span> <span class="n">code</span><span class="o">.</span><span class="n">m</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span><span class="p">:</span><span class="n">Demo</span>
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">scp</span> <span class="n">file1</span><span class="p">.</span><span class="n">txt</span> <span class="n">file2</span><span class="p">.</span><span class="n">txt</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span><span class="err">:</span><span class="p">~/</span><span class="n">destination_folder</span>
 </pre></div>
 
     </div>
@@ -13576,7 +13580,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scp</span> <span class="o">-</span><span class="n">C</span> <span class="n">data</span><span class="o">.</span><span class="n">csv</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span><span class="p">:</span><span class="n">Demo</span><span class="o">/</span><span class="n">data_rename</span><span class="o">.</span><span class="n">csv</span>
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">scp</span> <span class="n">-C</span> <span class="n">file</span><span class="p">.</span><span class="n">csv</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span><span class="err">:</span><span class="p">~/</span><span class="n">Data</span><span class="p">/</span><span class="n">file_rename</span><span class="p">.</span><span class="n">csv</span>
 </pre></div>
 
     </div>
@@ -13597,7 +13601,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scp</span> <span class="o">-</span><span class="n">r</span> <span class="n">Folder</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span><span class="p">:</span><span class="n">Folder</span>
+<div class=" highlight hl-powershell"><pre><span></span><span class="n">scp</span> <span class="n">-r</span> <span class="n">Folder</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span><span class="err">:</span><span class="p">~/</span><span class="n">Folder</span>
 </pre></div>
 
     </div>
@@ -13645,11 +13649,13 @@ Careful when installing it. You probably don't need or want the included Avast A
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Transfering-files---Map-a-network-drive">Transfering files - Map a network drive<a class="anchor-link" href="#Transfering-files---Map-a-network-drive">&#182;</a></h3><p><strong>Windows 10</strong></p>
 <ul>
-<li>I first installed <a href="https://github.com/billziss-gh/winfsp/releases">WinFsp</a> and <a href="https://github.com/billziss-gh/sshfs-win/releases">SSHFS-Win</a>)</li>
-<li>Mapped a network drive <code>sshfs//hkase@hpceui.iue.private</code></li>
+<li>Install <a href="https://github.com/billziss-gh/winfsp/releases">WinFsp</a> and <a href="https://github.com/billziss-gh/sshfs-win/releases">SSHFS-Win</a>. Look for <em>latest release</em> tag and <em>.msi</em> files.</li>
+<li>Map a network drive <code>sshfs//&lt;username&gt;@hpceui.iue.private</code></li>
 </ul>
-<p><strong>Linux - Ubuntu 18.04</strong><br>
-Add remote location <code>sftp://hkase@hpceui.iue.private/</code></p>
+<p><strong>Linux - Ubuntu 18.04</strong></p>
+<ul>
+<li>Add remote location <code>sftp://&lt;username&gt;@hpceui.iue.private/</code></li>
+</ul>
 
 </div>
 </div>
@@ -13661,13 +13667,54 @@ Add remote location <code>sftp://hkase@hpceui.iue.private/</code></p>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-do-I-actually-use-the-cluster?">How do I actually use the cluster?<a class="anchor-link" href="#How-do-I-actually-use-the-cluster?">&#182;</a></h2><p>The most common use of the cluster is to submit a <strong>batch job</strong>. For this we will need to specify for the scheduler what kind of resources we need and what program we would like to run. Then we enter the job into the queue. When there are available resources, it will get executed.</p>
+<p>We will now create a script <code>pbs_script</code>, that contains the following:</p>
+<ol>
+<li>Submit information</li>
+<li>Resource request</li>
+<li>Program (reqular bash script)</li>
+</ol>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Running-Julia-code">Running Julia code<a class="anchor-link" href="#Running-Julia-code">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-powershell"><pre><span></span><span class="c">#!/bin/bash</span>
+
+<span class="c"># 1. Submit infromation</span>
+<span class="c">#PBS -N JobName        # Name of the job (not required)</span>
+<span class="c">#PBS -V                # Pass the submit environment variables to the job</span>
+
+<span class="c"># 2. Resource request</span>
+<span class="c">#PBS -q qmw36                # Name of the queue</span>
+<span class="c">#PBS -l walltime=12:00:00    # Requested time (HH:MM:SS)</span>
+<span class="c">#PBS -l select=1:ncpus=36    # Number of nodes and cores</span>
+
+<span class="c"># 3. Program</span>
+<span class="nb">cd </span><span class="nv">$PBS_O_WORKDIR</span>                   <span class="c"># Go to the working directory</span>
+<span class="n">source</span> <span class="p">/</span><span class="n">apps</span><span class="p">/</span><span class="n">Gnu_var_4</span><span class="p">.</span><span class="n">9</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">sh</span>       <span class="c"># Execute Gnu_var_4.9.4.sh</span>
+<span class="n">export</span> <span class="n">PATH</span><span class="p">=/</span><span class="n">opt</span><span class="p">/</span><span class="n">pkgs</span><span class="p">/</span><span class="n">julia</span><span class="err">:</span><span class="nv">$PATH</span>   <span class="c"># Add Julia to the PATH environment variable</span>
+
+<span class="c"># Run the program</span>
+<span class="n">julia</span> <span class="n">sphere</span><span class="p">.</span><span class="n">jl</span> <span class="p">&gt;</span> <span class="n">Julia_simulation</span><span class="p">.</span><span class="n">out</span>
+
+<span class="nb">echo </span><span class="s2">&quot;Job completed!&quot;</span>
+<span class="n">exit</span>
 </pre></div>
 
     </div>
