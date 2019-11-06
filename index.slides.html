@@ -13222,6 +13222,12 @@ a.anchor-link {
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="You-can-find-the-slides-in-www.hannokase.com/HPC">You can find the slides in <a href="www.hannokase.com/HPC">www.hannokase.com/HPC</a><a class="anchor-link" href="#You-can-find-the-slides-in-www.hannokase.com/HPC">&#182;</a></h3>
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13358,6 +13364,10 @@ Password:</p>
     <tr>
       <td><code>rm [FILE] </code></td>
       <td>Delete file</td>
+    </tr>
+    <tr>
+      <td><code>mkdir [FOLDER]</code></td>
+        <td>Make a directory named [FOLDER]</td>
     </tr>
     <tr>
       <td><code>rm -r [FOLDER] </code></td>
@@ -13721,21 +13731,21 @@ Careful when installing it. You probably don't want the included Avast Antivirus
     </tr>
     <tr>
       <td><code>qwe36long</code></td>
-      <td>4</td>  
+      <td>?</td>  
       <td>matlabcl6-9</td>
       <td>36</td>
       <td>128GB</td>
       <td>No</td>
-      <td>7d</td>  
+      <td>168h</td>  
     </tr>  
     <tr>
       <td><code>qwe24long</code></td>
-      <td>4</td>  
+      <td>?</td>  
       <td>matlabcl4-5</td>
       <td>24</td>
       <td>128GB</td>
       <td>No</td>
-      <td>7d</td>  
+      <td>168h</td>  
     </tr>    
   </tbody>
 </table>
@@ -13759,12 +13769,7 @@ For this we will need to specify for the workload manager:</p>
 <li>what kind of resources we need and ...</li>
 <li>what program we would like to run. </li>
 </ol>
-<p>We do it all by creating a <strong>PBS script</strong> (like a bash script), that contains some special instructions for the workload manager and some general ones for running our program. The script has three parts:</p>
-<ol>
-<li>Name of the job</li>
-<li>Resource request</li>
-<li>Program to run</li>
-</ol>
+<p>We do it all by creating a <strong>PBS script</strong> (like a bash script), that contains some special instructions for the workload manager.</p>
 <p>Then we submit the job into the queue using <code>qsub</code> command. When there are available resources, it will get executed.</p>
 
 </div>
@@ -13971,7 +13976,11 @@ For this we will need to specify for the workload manager:</p>
     <tr>
       <td><code>qdel [jobid]</code></td>
       <td>Delete the [jobid]</td>
-    </tr>      
+    </tr>
+    <tr>
+      <td><code>tail -f [output_file.log]</code></td>
+      <td>Prints the output file in the terminal as it is being written</td>
+    </tr>
   </tbody>
 </table>
 </div>

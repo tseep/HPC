@@ -20,11 +20,14 @@ body {
   line-height: 1.3 !important;
 }
 
-table td,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+
 table th,
 table tr {
-  text-align: left !important;
-  font-size: 22px !important;}
+  font-size: 28px !important;}
 
   .reveal h1,
   .reveal h2,
