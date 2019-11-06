@@ -13682,7 +13682,7 @@ Careful when installing it. You probably don't want the included Avast Antivirus
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Queues-in-the-HPC-cluster">Queues in the HPC cluster<a class="anchor-link" href="#Queues-in-the-HPC-cluster">&#182;</a></h2><p>At the heart of the cluster is a workload management system (PBS Professional); a program that allocates computational resources.</p>
 <p>You use the cluster by first asking for resources. Depending on your computational needs, you will choose from which <strong>queue</strong> to ask the resources from.</p>
-<p>The EUI HPC cluster is designed such that there is a direct mapping from queues to computing nodes (servers). All the resources you request are allocated within one node. For some time you will get the whole server for yourself.</p>
+<p>The EUI HPC cluster is designed such that there is a direct mapping from queues to computing nodes (servers). All the resources you request are allocated within one node.</p>
 
 </div>
 </div>
@@ -13770,7 +13770,7 @@ For this we will need to specify for the workload manager:</p>
 <li>what program we would like to run. </li>
 </ol>
 <p>We do it all by creating a <strong>PBS script</strong> (like a bash script), that contains some special instructions for the workload manager.</p>
-<p>Then we submit the job into the queue using <code>qsub</code> command. When there are available resources, it will get executed.</p>
+<p>Then we submit the job into the queue using <code>qsub [pbs_script]</code> command. When there are available resources, it will get executed.</p>
 
 </div>
 </div>
@@ -14046,6 +14046,14 @@ For this we will need to specify for the workload manager:</p>
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Thank-you!">Thank you!<a class="anchor-link" href="#Thank-you!">&#182;</a></h1><p>E-mail us if you have questions: <a href="mailto:hpc.support@eui.eu">hpc.support@eui.eu</a><br>
+Request an account via <a href="https://www.eui.eu/Helpdesk">EUI Helpdesk</a>.</p>
+
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
