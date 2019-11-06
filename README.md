@@ -1,2 +1,3 @@
-# HPC
-Notes about HPC
+---
+permalink: /index.html
+---
