@@ -1,0 +1,14 @@
+#PBS -N vncjob
+#PBS -l nodes=1:ncpus=36
+#PBS -q qmw36 
+
+# vncserver -geometry XxY  -fg
+# -geometry 1280x1024    <= default is 1024x768
+# -fg                    <= Run in foreground, needed for PBS
+
+vncserver -geometry 1280x1024 -fg
+
+# please see also the following URL for major info about how to use
+# vnc remote desktop in conjnction with PBS Professional WM
+# http://fluxhpc.blogspot.it/2014/04/vnc-remote-desktop.html
+

@@ -13198,43 +13198,63 @@ a.anchor-link {
 
 <div class="reveal">
 <div class="slides">
-<section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<aside class="notes">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Render</span> <span class="n">using</span> <span class="n">command</span> <span class="n">line</span><span class="p">:</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="n">HPC_beginners</span><span class="o">.</span><span class="n">ipynb</span> <span class="o">--</span><span class="n">to</span> <span class="n">slides</span> <span class="o">--</span><span class="n">SlidesExporter</span><span class="o">.</span><span class="n">reveal_scroll</span><span class="o">=</span><span class="kc">True</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">prompt</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</aside><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="HPC-Tutorial-for-beginners">HPC Tutorial for beginners<a class="anchor-link" href="#HPC-Tutorial-for-beginners">&#182;</a></h1><p>Author: Hanno Kase</p>
+<h1 id="HPC-Workshop-for-Beginners">HPC Workshop for Beginners<a class="anchor-link" href="#HPC-Workshop-for-Beginners">&#182;</a></h1><p>Author: Hanno Kase</p>
 <p>Date: 06.11.2019</p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="How-do-I-get-the-HPC-account?">How do I get the HPC account?<a class="anchor-link" href="#How-do-I-get-the-HPC-account?">&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To access the HPC cluster, you need to request an account via <a href="https://www.eui.eu/Helpdesk">EUI Helpdesk</a>.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For this workshop, we have created you <strong>test accounts</strong>:</p>
+<p>User name: <strong>cmatlab01</strong>-<strong>cmatlab16</strong><br>
+Password:</p>
+
+</div>
+</div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="How-to-connect-to-the-HPC-cluster?">How to connect to the HPC cluster?<a class="anchor-link" href="#How-to-connect-to-the-HPC-cluster?">&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can access the HPC cluster through <strong>S</strong>ecure <strong>S</strong>hell <strong>P</strong>rotocol (SSH), using any SSH client.</p>
-<p>On Linux, Windows 10, and Mac a SSH client is preinstalled and you can use it through command line (Terminal, Command Prompt, PowerShell...).</p>
+<p>You can access the HPC cluster through <strong>S</strong>ecure <strong>Sh</strong>ell Protocol (SSH), using any SSH client.</p>
+<p>On Linux, Windows 10, and Mac a SSH client is preinstalled and you can use it through command line (Terminal, Command Prompt, PowerShell).</p>
 <hr>
 <p>Command for using SSH: <code>ssh username@host</code></p>
 
@@ -13243,10 +13263,10 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">ssh</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ssh</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span>
 </pre></div>
 
     </div>
@@ -13254,31 +13274,27 @@ a.anchor-link {
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="figures/login.png" alt="login"></p>
 
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Are-you-tired-of-typing-your-password?">Are you tired of typing your password?<a class="anchor-link" href="#Are-you-tired-of-typing-your-password?">&#182;</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To avoid typing your password every time you enter the HPC cluster you can add your <strong>public SSH key</strong> to <code>~/.ssh/authorized_keys</code> file on the HPC cluster.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>On Windows 10 you can find your public SSH key in:</p>
 <p><code>C:\Users\&lt;username&gt;\.ssh\id_rsa.pub</code></p>
@@ -13287,55 +13303,13 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Some-essential-Linux-commands">Some essential Linux commands<a class="anchor-link" href="#Some-essential-Linux-commands">&#182;</a></h2>
 </div>
 </div>
-</div><aside class="notes">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="p">%</span><span class="k">%</span><span class="n">html</span>
-<span class="p">&lt;</span><span class="n">style</span><span class="p">&gt;</span> 
-<span class="n">table</span> <span class="n">td</span><span class="p">,</span> <span class="n">table</span> <span class="n">th</span><span class="p">,</span> <span class="n">table</span> <span class="n">tr</span> <span class="p">{</span><span class="n">text-align</span><span class="err">:</span><span class="n">left</span> <span class="p">!</span><span class="n">important</span><span class="p">;</span> <span class="n">font-size</span><span class="err">:</span><span class="n">20px</span> <span class="p">!</span><span class="n">important</span><span class="p">;}</span>
-<span class="p">&lt;/</span><span class="n">style</span><span class="p">&gt;</span>
-</pre></div>
-
-    </div>
 </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<style> 
-table td, table th, table tr {text-align:left !important; font-size:20px !important;}
-</style>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-</aside>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <table align="center">
   <thead>
@@ -13398,32 +13372,50 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-to-transfer-files-to-the-HPC-cluster">How to transfer files to the HPC cluster<a class="anchor-link" href="#How-to-transfer-files-to-the-HPC-cluster">&#182;</a></h2><ul>
+<h2 id="How-to-transfer-files-to-the-HPC-cluster">How to transfer files to the HPC cluster<a class="anchor-link" href="#How-to-transfer-files-to-the-HPC-cluster">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>Command Line<ul>
 <li>SFTP</li>
 <li>SCP</li>
 </ul>
 </li>
-<li>Graphic User Interface<ul>
+<li>Graphical User Interface<ul>
 <li>Using a SFTP client (<a href="https://filezilla-project.org/">FileZilla</a>, <a href="https://winscp.net/eng/index.php">WinSCP</a>)</li>
-<li>Map a network drive   <ul>
-<li>Bit tricky on Windows 10 (I used <a href="https://github.com/billziss-gh/winfsp/releases">WinFsp</a> and <a href="https://github.com/billziss-gh/sshfs-win/releases">SSHFS-Win</a>)</li>
-</ul>
-</li>
+<li>Map a network drive*   </li>
 </ul>
 </li>
 </ul>
 
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transfering-files---Command-Line:-SFTP">Transfering files - Command Line: SFTP<a class="anchor-link" href="#Transfering-files---Command-Line:-SFTP">&#182;</a></h2><p>Interactive command, that opens a connection for submiting several commands for transfering files.</p>
+<p>*Easy on Linux, but a bit tricky on Windows 10 and Mac</p>
+<ul>
+<li>Windows 10 : install <a href="https://github.com/billziss-gh/winfsp/releases">WinFsp</a> and <a href="https://github.com/billziss-gh/sshfs-win/releases">SSHFS-Win</a></li>
+<li>Mac : <a href="https://apple.stackexchange.com/questions/5209/how-can-i-mount-sftp-ssh-in-finder-on-os-x-snow-leopard">this</a> might be helpful</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Transfering-files---Command-Line:-SFTP">Transfering files - Command Line: SFTP<a class="anchor-link" href="#Transfering-files---Command-Line:-SFTP">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Interactive command, that opens a connection for submiting several commands for transfering files.</p>
 <p>Command for opening SFTP connection: <code>sftp username@hpceui.iue.private</code></p>
 
 </div>
@@ -13431,21 +13423,25 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Move around the local or remote machine, and transfer files using following commands.</p>
+<h3 id="SFTP-interactive-commands">SFTP interactive commands<a class="anchor-link" href="#SFTP-interactive-commands">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <table align="center">
   <thead>
     <tr>
@@ -13491,13 +13487,12 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
       <td>Get a file from the REMOTE machine to the LOCAL machine</td>
     </tr>
   </tbody>
-</table><p>To close the connection by typing <code>exit</code> or pressing <kbd>CTRL</kbd>+<kbd>C</kbd>.</p>
+</table><p>Close the connection by typing <code>exit</code> or <code>bye</code> or pressing <kbd>CTRL</kbd>+<kbd>C</kbd>.</p>
 
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="SFTP-Example">SFTP Example<a class="anchor-link" href="#SFTP-Example">&#182;</a></h3>
 </div>
@@ -13505,10 +13500,10 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sftp</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span>
 </pre></div>
 
     </div>
@@ -13516,20 +13511,19 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's try to transfer <code>data.csv</code> file from local machine to the remote machine.</p>
+<p>Let's try to transfer <code>file1.txt</code> file from local machine to the remote machine.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">put</span> <span class="n">data</span><span class="p">.</span><span class="n">csv</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">put</span> <span class="n">file1</span><span class="o">.</span><span class="n">txt</span> 
 </pre></div>
 
     </div>
@@ -13537,18 +13531,22 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The file <code>data.csv</code> from the active directory on our local machine got transfered to the active directory on the remote machine. We can transfer</p>
+<p>The file <code>file1.txt</code> from the active directory on our local machine got transfered to the active directory on the remote machine.</p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Transfering-files---Command-Line:-SCP">Transfering files - Command Line: SCP<a class="anchor-link" href="#Transfering-files---Command-Line:-SCP">&#182;</a></h2><p>Non-interactive command. Takes only one command and then exits.</p>
+<h2 id="Transfering-files---Command-Line:-SCP">Transfering files - Command Line: SCP<a class="anchor-link" href="#Transfering-files---Command-Line:-SCP">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Non-interactive command. Takes only one command and then exits.</p>
 <p>Command for using SCP:  <code>SCP [SOURCE] username@hpceui.iue.private:[TARGET]</code></p>
 
 </div>
@@ -13556,10 +13554,10 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">scp</span> <span class="n">file1</span><span class="p">.</span><span class="n">txt</span> <span class="n">file2</span><span class="p">.</span><span class="n">txt</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span><span class="err">:</span><span class="p">~/</span><span class="n">destination_folder</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scp</span> <span class="n">file1</span><span class="o">.</span><span class="n">txt</span> <span class="n">file2</span><span class="o">.</span><span class="n">txt</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span><span class="p">:</span><span class="o">~/</span><span class="n">demo</span>
 </pre></div>
 
     </div>
@@ -13567,8 +13565,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For faster file transfer, we can use compression <code>-C</code>.</p>
 
@@ -13577,10 +13574,10 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">scp</span> <span class="n">-C</span> <span class="n">file</span><span class="p">.</span><span class="n">csv</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span><span class="err">:</span><span class="p">~/</span><span class="n">Data</span><span class="p">/</span><span class="n">file_rename</span><span class="p">.</span><span class="n">csv</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scp</span> <span class="o">-</span><span class="n">C</span> <span class="n">file1</span><span class="o">.</span><span class="n">txt</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span><span class="p">:</span><span class="o">~/</span><span class="n">demo</span><span class="o">/</span><span class="n">file_rename</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 
     </div>
@@ -13588,20 +13585,19 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Add <code>-r</code> flag to move the whole folder</p>
+<p>Add <code>-r</code> flag to copy the whole folder.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="n">scp</span> <span class="n">-r</span> <span class="n">Folder</span> <span class="n">hkase</span><span class="nv">@hpceui</span><span class="p">.</span><span class="n">iue</span><span class="p">.</span><span class="n">private</span><span class="err">:</span><span class="p">~/</span><span class="n">Folder</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scp</span> <span class="o">-</span><span class="n">r</span> <span class="n">folder</span> <span class="n">hkase</span><span class="nd">@hpceui</span><span class="o">.</span><span class="n">iue</span><span class="o">.</span><span class="n">private</span><span class="p">:</span><span class="o">~/</span><span class="n">new_folder</span>
 </pre></div>
 
     </div>
@@ -13609,8 +13605,7 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Transfering-files---GUI:-WinSCP">Transfering files - GUI: WinSCP<a class="anchor-link" href="#Transfering-files---GUI:-WinSCP">&#182;</a></h2><p>Free software for Windows 10.<br>
 <img src="figures/WinSCP.png" alt="WinSCP"></p>
@@ -13618,103 +13613,424 @@ table td, table th, table tr {text-align:left !important; font-size:20px !import
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="figures/WinSCP_transfer.png" alt="WinSCP_transfer"></p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Transfering-files---GUI:-FileZilla">Transfering files - GUI: FileZilla<a class="anchor-link" href="#Transfering-files---GUI:-FileZilla">&#182;</a></h2><p>Free software available for Linux, Mac, Windows 10.<br>
-Careful when installing it. You probably don't need or want the included Avast Antivirus.
-<img src="figures/FileZilla.png" alt="FileZilla"></p>
+Careful when installing it. You probably don't want the included Avast Antivirus.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="figures/FileZilla.png" alt="FileZilla"></p>
 
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="figures/Filezilla_transfer.png" alt="FileZilla_transfer"></p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Transfering-files---Map-a-network-drive">Transfering files - Map a network drive<a class="anchor-link" href="#Transfering-files---Map-a-network-drive">&#182;</a></h3><p><strong>Windows 10</strong></p>
+<h2 id="Transfering-files---Map-a-network-drive">Transfering files - Map a network drive<a class="anchor-link" href="#Transfering-files---Map-a-network-drive">&#182;</a></h2><p><strong>Windows 10</strong></p>
 <ul>
 <li>Install <a href="https://github.com/billziss-gh/winfsp/releases">WinFsp</a> and <a href="https://github.com/billziss-gh/sshfs-win/releases">SSHFS-Win</a>. Look for <em>latest release</em> tag and <em>.msi</em> files.</li>
 <li>Map a network drive <code>sshfs//&lt;username&gt;@hpceui.iue.private</code></li>
 </ul>
 <p><strong>Linux - Ubuntu 18.04</strong></p>
 <ul>
-<li>Add remote location <code>sftp://&lt;username&gt;@hpceui.iue.private/</code></li>
+<li>Add remote location <code>sftp://&lt;username&gt;@hpceui.iue.private/</code> </li>
+</ul>
+<p><strong>Mac</strong></p>
+<ul>
+<li><a href="https://apple.stackexchange.com/questions/5209/how-can-i-mount-sftp-ssh-in-finder-on-os-x-snow-leopard">This</a> might be helpful</li>
 </ul>
 
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="figures/Win10_map_drive.png" alt="Win10_map_drive"></p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-do-I-actually-use-the-cluster?">How do I actually use the cluster?<a class="anchor-link" href="#How-do-I-actually-use-the-cluster?">&#182;</a></h2><p>The most common use of the cluster is to submit a <strong>batch job</strong>. For this we will need to specify for the scheduler what kind of resources we need and what program we would like to run. Then we enter the job into the queue. When there are available resources, it will get executed.</p>
-<p>We will now create a script <code>pbs_script</code>, that contains the following:</p>
-<ol>
-<li>Submit information</li>
-<li>Resource request</li>
-<li>Program (reqular bash script)</li>
-</ol>
+<h2 id="Queues-in-the-HPC-cluster">Queues in the HPC cluster<a class="anchor-link" href="#Queues-in-the-HPC-cluster">&#182;</a></h2><p>At the heart of the cluster is a workload management system (PBS Professional); a program that allocates computational resources.</p>
+<p>You use the cluster by first asking for resources. Depending on your computational needs, you will choose from which <strong>queue</strong> to ask the resources from.</p>
+<p>The EUI HPC cluster is designed such that there is a direct mapping from queues to computing nodes (servers). All the resources you request are allocated within one node. For some time you will get the whole server for yourself.</p>
 
 </div>
 </div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Running-Julia-code">Running Julia code<a class="anchor-link" href="#Running-Julia-code">&#182;</a></h3>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Queue</th>
+      <th>Slots</th>
+      <th>Nodes</th>
+      <th>CPU cores</th>
+      <th>Memory</th>
+      <th>GPU</th>  
+      <th>Walltime</th>  
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>qwe36</code></td>
+      <td>4</td>  
+      <td>matlabcl6-9</td>
+      <td>36</td>
+      <td>128GB</td>
+      <td>No</td>
+      <td>12h</td>  
+    </tr>  
+    <tr>
+      <td><code>qwe24</code></td>
+      <td>2</td>  
+      <td>matlabcl4-5</td>
+      <td>24</td>
+      <td>128GB</td>
+      <td>No</td>
+      <td>12h</td>  
+    </tr>
+    <tr>
+      <td><code>qwe12</code></td>
+      <td>1</td>    
+      <td>matlabcl3</td>
+      <td>12</td>
+      <td>32GB</td>
+      <td>Yes</td>
+      <td>72h</td>  
+    </tr>
+    <tr>
+      <td><code>qwe36long</code></td>
+      <td>4</td>  
+      <td>matlabcl6-9</td>
+      <td>36</td>
+      <td>128GB</td>
+      <td>No</td>
+      <td>7d</td>  
+    </tr>  
+    <tr>
+      <td><code>qwe24long</code></td>
+      <td>4</td>  
+      <td>matlabcl4-5</td>
+      <td>24</td>
+      <td>128GB</td>
+      <td>No</td>
+      <td>7d</td>  
+    </tr>    
+  </tbody>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Which-queue-should-I-choose?">Which queue should I choose?<a class="anchor-link" href="#Which-queue-should-I-choose?">&#182;</a></h2><p><code>qstat -Q</code> or <code>qstat -q</code>to find out what kind of queues are there.</p>
+<p><code>qstat</code> or <code>qstat -n1</code> to monitor the queues.</p>
+<p><code>pbsnodes -av</code> to get a detailed overview of all the nodes.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-to-submit-a-batch-job-to-the-HPC-cluster?">How to submit a batch job to the HPC cluster?<a class="anchor-link" href="#How-to-submit-a-batch-job-to-the-HPC-cluster?">&#182;</a></h2><p>The most common use of the cluster is to submit a <strong>batch job</strong>.<br>
+For this we will need to specify for the workload manager:</p>
+<ol>
+<li>what kind of resources we need and ...</li>
+<li>what program we would like to run. </li>
+</ol>
+<p>We do it all by creating a <strong>PBS script</strong> (like a bash script), that contains some special instructions for the workload manager and some general ones for running our program. The script has three parts:</p>
+<ol>
+<li>Name of the job</li>
+<li>Resource request</li>
+<li>Program to run</li>
+</ol>
+<p>Then we submit the job into the queue using <code>qsub</code> command. When there are available resources, it will get executed.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Script-for-running-MatLab-code-(CPU)">Script for running MatLab code (CPU)<a class="anchor-link" href="#Script-for-running-MatLab-code-(CPU)">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-powershell"><pre><span></span><span class="c">#!/bin/bash</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># 1. Job name</span>
+<span class="c1">#PBS -N MATLAB</span>
 
-<span class="c"># 1. Submit infromation</span>
-<span class="c">#PBS -N JobName        # Name of the job (not required)</span>
-<span class="c">#PBS -V                # Pass the submit environment variables to the job</span>
+<span class="c1"># 2. Request resources</span>
+<span class="c1"># set the number of nodes and processes per node</span>
+<span class="c1">#PBS -q qmw12</span>
 
-<span class="c"># 2. Resource request</span>
-<span class="c">#PBS -q qmw36                # Name of the queue</span>
-<span class="c">#PBS -l walltime=12:00:00    # Requested time (HH:MM:SS)</span>
-<span class="c">#PBS -l select=1:ncpus=36    # Number of nodes and cores</span>
+<span class="c1"># use submission environment</span>
+<span class="c1">#PBS -V</span>
 
-<span class="c"># 3. Program</span>
-<span class="nb">cd </span><span class="nv">$PBS_O_WORKDIR</span>                   <span class="c"># Go to the working directory</span>
-<span class="n">source</span> <span class="p">/</span><span class="n">apps</span><span class="p">/</span><span class="n">Gnu_var_4</span><span class="p">.</span><span class="n">9</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">sh</span>       <span class="c"># Execute Gnu_var_4.9.4.sh</span>
-<span class="n">export</span> <span class="n">PATH</span><span class="p">=/</span><span class="n">opt</span><span class="p">/</span><span class="n">pkgs</span><span class="p">/</span><span class="n">julia</span><span class="err">:</span><span class="nv">$PATH</span>   <span class="c"># Add Julia to the PATH environment variable</span>
+<span class="c1"># 3. Run the program</span>
+<span class="c1"># start the job from the directory it was submitted</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">PBS_O_WORKDIR</span>
 
-<span class="c"># Run the program</span>
-<span class="n">julia</span> <span class="n">sphere</span><span class="p">.</span><span class="n">jl</span> <span class="p">&gt;</span> <span class="n">Julia_simulation</span><span class="p">.</span><span class="n">out</span>
+<span class="c1"># set some environment variables for MatLab</span>
+<span class="n">source</span> <span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="n">Matlab_var_R2019a</span><span class="o">.</span><span class="n">sh</span>
 
-<span class="nb">echo </span><span class="s2">&quot;Job completed!&quot;</span>
-<span class="n">exit</span>
+<span class="c1"># Run your the matlab code</span>
+<span class="n">matlab</span> <span class="o">-</span><span class="n">batch</span> <span class="s2">&quot;R2019a_mod_paralleldemo_parfor_bench&quot;</span> <span class="o">&gt;&amp;</span> <span class="n">matlab</span><span class="o">.</span><span class="n">log</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Script-for-running-MatLab-code-(GPU)">Script for running MatLab code (GPU)<a class="anchor-link" href="#Script-for-running-MatLab-code-(GPU)">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># 1. Job name</span>
+<span class="c1">#PBS -N MATLAB</span>
+
+<span class="c1"># 2. Request resources</span>
+<span class="c1"># set the number of nodes and processes per node</span>
+<span class="c1">#PBS -q qmw12</span>
+
+<span class="c1"># use submission environment</span>
+<span class="c1">#PBS -V</span>
+
+<span class="c1"># 3. Run the program</span>
+<span class="c1"># start the job from the directory it was submitted</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">PBS_O_WORKDIR</span>
+
+<span class="c1"># set some environment variables for CUDA and MatLab</span>
+<span class="n">source</span> <span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="n">cuda</span><span class="o">-</span><span class="mf">10.1</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">source</span> <span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="n">Matlab_var_R2019a</span><span class="o">.</span><span class="n">sh</span>
+
+<span class="c1"># Run your the matlab code</span>
+<span class="n">matlab</span> <span class="o">-</span><span class="n">batch</span> <span class="s2">&quot;paralleldemo_gpu_backslash&quot;</span> <span class="o">&gt;&amp;</span> <span class="n">matlab_gpu</span><span class="o">.</span><span class="n">log</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Script-for-running-Julia-code">Script for running Julia code<a class="anchor-link" href="#Script-for-running-Julia-code">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># 1. Job name</span>
+<span class="c1">#PBS -N Julia</span>
+
+<span class="c1"># 2. Resource request</span>
+<span class="c1">#PBS -q qmw12 -l walltime=12:00:00,select=1:ncpus=12</span>
+
+<span class="c1"># use submission environment</span>
+<span class="c1">#PBS -V </span>
+
+<span class="c1"># 3. Program to run</span>
+<span class="c1"># start the job from the directory it was submitted</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">PBS_O_WORKDIR</span>
+
+<span class="c1"># set some environment variables for Julia</span>
+<span class="n">source</span> <span class="o">/</span><span class="n">apps</span><span class="o">/</span><span class="n">Gnu_var_4</span><span class="o">.</span><span class="mf">9.4</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">export</span> <span class="n">PATH</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">pkgs</span><span class="o">/</span><span class="n">julia</span><span class="o">-</span><span class="mf">1.1</span><span class="o">.</span><span class="mi">0</span><span class="o">/</span><span class="nb">bin</span><span class="p">:</span><span class="err">$</span><span class="n">PATH</span>
+
+<span class="c1"># Run your Julia code</span>
+<span class="n">export</span> <span class="n">JULIA_NUM_THREADS</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">julia</span> <span class="o">-</span><span class="n">O3</span> <span class="o">--</span> <span class="n">spectralnorm</span><span class="o">.</span><span class="n">julia</span> <span class="mi">5500</span> <span class="o">&gt;&amp;</span> <span class="n">spectralnorm</span><span class="o">.</span><span class="n">julia</span><span class="o">.</span><span class="n">log</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Script-for-running-FORTRAN-code-(OpenMP)">Script for running FORTRAN code (OpenMP)<a class="anchor-link" href="#Script-for-running-FORTRAN-code-(OpenMP)">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># set the number of nodes and processes per node</span>
+<span class="c1">#PBS -q qmw12 -l select=1:ncpus=12</span>
+
+<span class="c1"># set name of job</span>
+<span class="c1">#PBS -N Fortran</span>
+
+<span class="c1"># OMP Environment Variable #</span>
+<span class="n">export</span> <span class="n">OMP_NUM_THREADS</span><span class="o">=</span><span class="mi">12</span>
+<span class="n">export</span> <span class="n">OMP_THREAD_LIMIT</span><span class="o">=</span><span class="mi">12</span>
+
+<span class="c1"># use submission environment</span>
+<span class="c1">#PBS -V</span>
+
+<span class="c1"># start job from the directory it was submitted</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">PBS_O_WORKDIR</span>
+
+<span class="c1"># compile the Fortran Source....</span>
+<span class="n">echo</span> <span class="s2">&quot;Running gfortran on `hostname`: gfortran -fopenmp matrix_mult.f -o matrix_mult.exe&quot;</span>
+<span class="n">gfortran</span> <span class="o">-</span><span class="n">fopenmp</span> <span class="n">matrix_mult</span><span class="o">.</span><span class="n">f</span> <span class="o">-</span><span class="n">o</span> <span class="n">matrix_mult</span><span class="o">.</span><span class="n">exe</span>
+<span class="c1"># run my_application over a compute node within the PBS ring (pbsnodes -av)</span>
+<span class="n">echo</span> <span class="s2">&quot;Running line on `hostname`: ./matrix_mult.exe &gt; 12_cores_output_file &quot;</span>
+<span class="o">./</span><span class="n">matrix_mult</span><span class="o">.</span><span class="n">exe</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="n">_cores_output_file</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="I-would-like-to-run-R/STATA/Python...">I would like to run R/STATA/Python...<a class="anchor-link" href="#I-would-like-to-run-R/STATA/Python...">&#182;</a></h3><p>You can find many other PBS script samples on the cluster in <code>/share/apps</code></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Monitoring-your-job">Monitoring your job<a class="anchor-link" href="#Monitoring-your-job">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table align="center">
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>What does it do?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>qstat</code></td>
+      <td>Shows the status of all the jobs</td>
+    </tr>
+    <tr>
+      <td><code>qstat -n1</code></td>
+      <td>Shows the status of all the jobs and their nodes</td>
+    </tr>
+    <tr>
+      <td><code>qstat -u [username]</code></td>
+      <td>Shows the status of the jobs belonging to [username]</td>
+    </tr>
+    <tr>
+      <td><code>qstat -f [jobid]</code></td>
+      <td>Shows the detailed information about [jobid]</td>
+    </tr>
+    <tr>
+      <td><code>qdel [jobid]</code></td>
+      <td>Delete the [jobid]</td>
+    </tr>      
+  </tbody>
+</table>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-is-my-code-doing?">How is my code doing?<a class="anchor-link" href="#How-is-my-code-doing?">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you are not quite sure that your code is running nicely in parallel, you can log into the compute node and check the task manager <code>htop</code>.</p>
+<ol>
+<li>Find the node where your job is running using <code>qstat -u [username] -n1</code>.</li>
+<li>Log into the node <code>ssh [node name]</code>, for example <code>ssh matlabcl3</code>.</li>
+<li>Run <code>htop</code> to open the task manager</li>
+<li>Close the task manager by pressing <kbd>F11</kbd> </li>
+<li>Close the SSH connection by typing <code>exit</code></li>
+</ol>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-to-use-the-cluster-interactively?">How to use the cluster interactively?<a class="anchor-link" href="#How-to-use-the-cluster-interactively?">&#182;</a></h2><p>Using cluster interactively can be useful for developing your code or debugging.</p>
+<p>Add <code>-I</code> to the reqular <code>qsub</code> command. The following command will start an interactive job with the parameters specified in the <code>pbs_script</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">qsub</span> <span class="o">-</span><span class="n">I</span> <span class="n">pbs_script</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can start an interactive session without a PBS script.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">qsub</span> <span class="o">-</span><span class="n">I</span> <span class="o">-</span><span class="n">N</span> <span class="n">MyInteractiveJob</span> <span class="o">-</span><span class="n">q</span> <span class="n">qmw12</span> <span class="o">-</span><span class="n">l</span> <span class="n">select</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="n">ncpus</span><span class="o">=</span><span class="mi">12</span><span class="p">:</span><span class="n">host</span><span class="o">=</span><span class="n">matlabcl3</span>
 </pre></div>
 
     </div>
@@ -13767,7 +14083,7 @@ require(
         Reveal.addEventListener('slidechanged', update);
 
         function setScrollingSlide() {
-            var scroll = false
+            var scroll = true
             if (scroll === true) {
               var h = $('.reveal').height() * 0.95;
               $('section.present').find('section')
