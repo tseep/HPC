@@ -1,7 +1,7 @@
 .slides {
   width: 80% !important;
   height: 100% !important;
-  zoom: 1.0 !important;
+  zoom: 0.8 !important;
 }
 
 body {
@@ -61,7 +61,13 @@ table tr {
         margin: 10px 0 0 0;
 }
 
-.reveal img,
+.reveal img {
+  position:sticky !important;
+  vertical-align: middle !important;
+  max-width: 95% !important;
+  max-height: 95% !important;
+}
+
 .reveal video,
 .reveal iframe {
   max-width: 95% !important;
