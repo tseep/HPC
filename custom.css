@@ -1,8 +1,9 @@
 .slides {
-  width: 80% !important;
+  width: 90% !important;
   height: 100% !important;
   zoom: 0.8 !important;
 }
+
 
 body {
   font-size: 18px !important;
@@ -61,14 +62,8 @@ table tr {
         margin: 10px 0 0 0;
 }
 
-.reveal img {
-  position:sticky !important;
-  vertical-align: middle !important;
-  max-width: 95% !important;
-  max-height: 95% !important;
-}
-
+.reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95% !important;
+  max-width: 80% !important;
   max-height: 95% !important; }
